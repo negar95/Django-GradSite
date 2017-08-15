@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    {% for conference in conferences %}
+        {{ conference }}
+        <a href="/conference/buy_ticket"><button>Buy!</button></a>
+    {% endfor %}
+{% endblock %}
